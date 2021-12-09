@@ -1,0 +1,3523 @@
+[
+    {
+        "id": "648ea88964e670bb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c80e522343f26fe5",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fc6594aa.09c1b8",
+        "type": "tab",
+        "label": "Power Meter Dash",
+        "disabled": false,
+        "info": "Power Meter DashBoard"
+    },
+    {
+        "id": "648eed4e.a2c854",
+        "type": "subflow",
+        "name": "Detect online",
+        "info": "",
+        "in": [
+            {
+                "x": 260,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "a58818a2.e1d1f8"
+                    },
+                    {
+                        "id": "a6b5cfed.cf616"
+                    },
+                    {
+                        "id": "9dc3c3fc.49d74"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1440,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "28d18d8c.47cf42",
+                        "port": 0
+                    },
+                    {
+                        "id": "20e36652.208e6a",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "c688cfc5.fa65a",
+        "type": "subflow",
+        "name": "SaveChart",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "961aed22.d75c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 820,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "1befe549.2465ab",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "65b73ea5.6b5e9",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "ee9d8a58.9f9178",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "4aea2473.ab8c1c",
+        "type": "ui_tab",
+        "name": "HomeTab",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2f875b27.961924",
+        "type": "ui_tab",
+        "name": "HOME",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "2f24cb99.0efc94",
+        "type": "ui_tab",
+        "name": "Cronotermostato",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4a085c23.7d4544",
+        "type": "ui_tab",
+        "name": "Admin",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7be3e7de.480da8",
+        "type": "ui_tab",
+        "name": "Rollos",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cf6c42df.017b2",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "1a7d2abc.bc4eb5",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "4aea2473.ab8c1c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1e06ead8.323a55",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e40b638e.40521",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "d266c3c2.f44de",
+        "type": "ui_group",
+        "name": "Circulating Pump Control",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "5"
+    },
+    {
+        "id": "26913fdf.1e593",
+        "type": "ui_group",
+        "name": "Device",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "25ee7764.cf0be8",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "6f154edf.9c644",
+        "type": "ui_group",
+        "name": "Temperatures",
+        "tab": "4aea2473.ab8c1c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "96e58b4d.777ae8",
+        "type": "ui_group",
+        "name": "WWThermo2",
+        "tab": "2f875b27.961924",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "60b398dd.585808",
+        "type": "ui_group",
+        "name": "Scheduler",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bb275a9.0de70a8",
+        "type": "ui_group",
+        "name": "Programmazione",
+        "tab": "2f24cb99.0efc94",
+        "order": 2,
+        "disp": false,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "a8cf045f.b322b8",
+        "type": "ui_group",
+        "name": "Nest",
+        "tab": "2f24cb99.0efc94",
+        "order": 1,
+        "disp": false,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "b8fc2c37.491c7",
+        "type": "ui_group",
+        "name": "Grafico",
+        "tab": "2f24cb99.0efc94",
+        "order": 3,
+        "disp": false,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "5bc78698.8d8608",
+        "type": "ui_group",
+        "name": "Countdown",
+        "tab": "2f24cb99.0efc94",
+        "order": 4,
+        "disp": false,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "17fcbc65.35fc44",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "4a085c23.7d4544",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "4d58b546.b3cedc",
+        "type": "ui_group",
+        "name": "admin1",
+        "tab": "4a085c23.7d4544",
+        "order": 3,
+        "disp": true,
+        "width": "20",
+        "collapse": false
+    },
+    {
+        "id": "f8b5c544.2b0c78",
+        "type": "ui_group",
+        "name": "admin2",
+        "tab": "4a085c23.7d4544",
+        "order": 4,
+        "disp": true,
+        "width": "21",
+        "collapse": false
+    },
+    {
+        "id": "a3de122c.c293b",
+        "type": "ui_group",
+        "name": "Change Tabs",
+        "tab": "4a085c23.7d4544",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "b3a4e8a7.adfed8",
+        "type": "ui_group",
+        "name": "Button 1",
+        "tab": "cf6c42df.017b2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "700a81e3.2285c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "cf6c42df.017b2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a76622c9.e8ee6",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "cf6c42df.017b2",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "76243a1.15b3dc4",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "cf6c42df.017b2",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6cc0708a.453a4",
+        "type": "ui_group",
+        "name": "Button 2",
+        "tab": "cf6c42df.017b2",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2a6540ee.63c96",
+        "type": "ui_group",
+        "name": "Button 3",
+        "tab": "cf6c42df.017b2",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5a21388b.05e4e8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9944dfc46803499d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8437f5a6.4efeb8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.188.176",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "a2da0c49.c082a",
+        "type": "ui_group",
+        "name": "Voltage",
+        "tab": "6a391fc8.61d0b",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "1244db85.eebda4",
+        "type": "ui_group",
+        "name": "Voltage",
+        "tab": "19e5a2d5.1d341d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e86ebad.9775748",
+        "type": "ui_group",
+        "name": "Current",
+        "tab": "6a391fc8.61d0b",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e0a1a2e.b6fa66",
+        "type": "ui_group",
+        "name": "Current",
+        "tab": "19e5a2d5.1d341d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c2d04edd.572dd",
+        "type": "ui_group",
+        "name": "Power",
+        "tab": "6a391fc8.61d0b",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "eb61136.446a0f",
+        "type": "ui_group",
+        "name": "Power",
+        "tab": "19e5a2d5.1d341d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4b0f110f.6895b",
+        "type": "ui_group",
+        "name": "Energy",
+        "tab": "6a391fc8.61d0b",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "db4f5be0.69b6b8",
+        "type": "ui_group",
+        "name": "Energy",
+        "tab": "19e5a2d5.1d341d",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "89d22968.73d938",
+        "type": "ui_group",
+        "name": "Watt",
+        "tab": "6a391fc8.61d0b",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5d9cc346.21a91c",
+        "type": "ui_group",
+        "name": "Watt",
+        "tab": "19e5a2d5.1d341d",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6a391fc8.61d0b",
+        "type": "ui_tab",
+        "name": "Power Meter",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "19e5a2d5.1d341d",
+        "type": "ui_tab",
+        "name": "Power Meter Consumption",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4268d1c3c7dba5dc",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "home",
+        "name": "",
+        "usetls": false,
+        "tls": "65b73ea5.6b5e9",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "70ed8a2d.1918a4",
+        "type": "delay",
+        "z": "648eed4e.a2c854",
+        "name": "",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 870,
+        "y": 160,
+        "wires": [
+            [
+                "48e1b3e1.ad02ac"
+            ]
+        ]
+    },
+    {
+        "id": "20e36652.208e6a",
+        "type": "inject",
+        "z": "648eed4e.a2c854",
+        "name": "Startup",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "48e1b3e1.ad02ac"
+            ]
+        ]
+    },
+    {
+        "id": "a6b5cfed.cf616",
+        "type": "change",
+        "z": "648eed4e.a2c854",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "70ed8a2d.1918a4"
+            ]
+        ]
+    },
+    {
+        "id": "1d130518.c0bd8b",
+        "type": "delay",
+        "z": "648eed4e.a2c854",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "70ed8a2d.1918a4"
+            ]
+        ]
+    },
+    {
+        "id": "a58818a2.e1d1f8",
+        "type": "change",
+        "z": "648eed4e.a2c854",
+        "name": "Online",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 110,
+        "wires": [
+            [
+                "bd4081dc.a29a2"
+            ]
+        ]
+    },
+    {
+        "id": "48e1b3e1.ad02ac",
+        "type": "change",
+        "z": "648eed4e.a2c854",
+        "name": "Offline",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 160,
+        "wires": [
+            [
+                "bd4081dc.a29a2"
+            ]
+        ]
+    },
+    {
+        "id": "28d18d8c.47cf42",
+        "type": "rbe",
+        "z": "648eed4e.a2c854",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "x": 1300,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9dc3c3fc.49d74",
+        "type": "change",
+        "z": "648eed4e.a2c854",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "delay",
+                "pt": "msg",
+                "to": "timeout",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "1d130518.c0bd8b"
+            ]
+        ]
+    },
+    {
+        "id": "ceac86f7.ae77c8",
+        "type": "comment",
+        "z": "648eed4e.a2c854",
+        "name": "Each incoming message will retrigger a new timeout (msg.timeout [ms]) before being reported offline",
+        "info": "",
+        "x": 590,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bd4081dc.a29a2",
+        "type": "change",
+        "z": "648eed4e.a2c854",
+        "name": "Offline",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "isonline",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 140,
+        "wires": [
+            [
+                "28d18d8c.47cf42"
+            ]
+        ]
+    },
+    {
+        "id": "fee58514.0eff38",
+        "type": "file",
+        "z": "c688cfc5.fa65a",
+        "name": "backup",
+        "filename": "",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 700,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a30c20e5.f7014",
+        "type": "file in",
+        "z": "c688cfc5.fa65a",
+        "name": "restore",
+        "filename": "",
+        "format": "utf8",
+        "sendError": true,
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "1befe549.2465ab"
+            ]
+        ]
+    },
+    {
+        "id": "1cc3b083.37b39f",
+        "type": "json",
+        "z": "c688cfc5.fa65a",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "fee58514.0eff38"
+            ]
+        ]
+    },
+    {
+        "id": "1befe549.2465ab",
+        "type": "json",
+        "z": "c688cfc5.fa65a",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "961aed22.d75c",
+        "type": "function",
+        "z": "c688cfc5.fa65a",
+        "name": "LoadSave",
+        "func": "var strSafe=msg.topic;\nif(strSafe)\n{\n    msg.filename =\"/share/chart.save\";\n    var loaded=context.get(strSafe)||0;\n    \n    if(0===loaded||strSafe==\"restore\")\n    {\n        //node.warn(\"Loading chart\");\n        msg.payload=\"load\";\n        context.set(strSafe,1);\n    }\n    else\n    {\n        //node.warn(\"Writing chart\");\n        //node.warn(msg.payload);\n    }\n    return msg;\n \n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "7f35efe6.020cb"
+            ]
+        ]
+    },
+    {
+        "id": "7f35efe6.020cb",
+        "type": "switch",
+        "z": "c688cfc5.fa65a",
+        "name": "Load data",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "load",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "a30c20e5.f7014"
+            ],
+            [
+                "1cc3b083.37b39f"
+            ]
+        ]
+    },
+    {
+        "id": "edf4d50b6365aea4",
+        "type": "mqtt in",
+        "z": "c80e522343f26fe5",
+        "name": "",
+        "topic": "/test/1",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "9944dfc46803499d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "2013f3dd23b03d8a"
+            ]
+        ]
+    },
+    {
+        "id": "2013f3dd23b03d8a",
+        "type": "debug",
+        "z": "c80e522343f26fe5",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fe1f3a633325bf55",
+        "type": "mqtt out",
+        "z": "c80e522343f26fe5",
+        "name": "",
+        "topic": "/test/1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9944dfc46803499d",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "65ecbae742063dde",
+        "type": "inject",
+        "z": "c80e522343f26fe5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 360,
+        "wires": [
+            [
+                "fe1f3a633325bf55"
+            ]
+        ]
+    },
+    {
+        "id": "a0157902.a6b918",
+        "type": "mqtt in",
+        "z": "fc6594aa.09c1b8",
+        "name": "PM Telemetry",
+        "topic": "home/power/PZEM1/data1",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "8437f5a6.4efeb8",
+        "inputs": 0,
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "7cbf19c.c818ce8"
+            ]
+        ]
+    },
+    {
+        "id": "7cbf19c.c818ce8",
+        "type": "json",
+        "z": "fc6594aa.09c1b8",
+        "name": "To JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "72586dab.9b1544",
+                "3331d68e.11aefa",
+                "75f30069.bf44e",
+                "4d4e1817.cc8cf8",
+                "17ab4b9.4433eb4",
+                "e3262123.6263f",
+                "ce928620476d8c24"
+            ]
+        ]
+    },
+    {
+        "id": "72586dab.9b1544",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage (V)",
+        "func": "var obj = msg.payload[0];\nmsg.payload = Number(obj['V']);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 60,
+        "wires": [
+            [
+                "e395fdb6.6e5d",
+                "84606455.f34cd8"
+            ]
+        ]
+    },
+    {
+        "id": "3331d68e.11aefa",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current (I)",
+        "func": "msg.payload = Number(msg.payload[0].I);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "b1eb87ac.8a6f98",
+                "447776e4.b4a868",
+                "ad0b21b8.2a88f"
+            ]
+        ]
+    },
+    {
+        "id": "75f30069.bf44e",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power (W)",
+        "func": "msg.payload = Number(msg.payload[0].P);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "73b6630c.e21acc",
+                "c1d2a1ec.658d5"
+            ]
+        ]
+    },
+    {
+        "id": "4d4e1817.cc8cf8",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy (E)",
+        "func": "msg.payload = Number(msg.payload[0].E);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "a56d302e.6dea6",
+                "320eecae.308f44",
+                "6f56a1f0.fb16f",
+                "7e11540b.4b887c"
+            ]
+        ]
+    },
+    {
+        "id": "e395fdb6.6e5d",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage",
+        "group": "a2da0c49.c082a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltage 1",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "220",
+        "seg2": "240",
+        "x": 880,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "84606455.f34cd8",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage/Time",
+        "group": "1244db85.eebda4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage/Time 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 890,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1eb87ac.8a6f98",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Amper",
+        "group": "e86ebad.9775748",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Amper 1",
+        "label": "Amps",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "25",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "8",
+        "seg2": "16",
+        "x": 870,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "447776e4.b4a868",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current/Time",
+        "group": "e0a1a2e.b6fa66",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Amper/Time 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 890,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73b6630c.e21acc",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power",
+        "group": "c2d04edd.572dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power 1",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "3900",
+        "seg2": "3950",
+        "x": 870,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c1d2a1ec.658d5",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power Consumption",
+        "group": "eb61136.446a0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Power Consumption 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 920,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a56d302e.6dea6",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy",
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Energy 1",
+        "label": "Wh",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "9999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "49000",
+        "seg2": "49500",
+        "x": 880,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "320eecae.308f44",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy/Time",
+        "group": "db4f5be0.69b6b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Energy/Time 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 890,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f56a1f0.fb16f",
+        "type": "ui_text",
+        "z": "fc6594aa.09c1b8",
+        "d": true,
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Energy",
+        "label": "",
+        "format": "<font size=\"+12\">{{msg.payload}} Wh",
+        "layout": "col-center",
+        "x": 880,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "17ab4b9.4433eb4",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power Factor",
+        "func": "var power   = 0.0;\nvar current = 0.0;\nvar voltage = 0.0;\n\ncurrent = Number(msg.payload[0].I);\nvoltage = Number(msg.payload[0].V);\npower   = Number(msg.payload[0].P);\n\nif ( power > 0.0 ) \n    msg.payload =  Math.floor(power/(voltage * current)*100)/100;\nelse \n    msg.payload = 1.0;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [
+                "8ed02ce.79541d"
+            ]
+        ]
+    },
+    {
+        "id": "8ed02ce.79541d",
+        "type": "ui_text",
+        "z": "fc6594aa.09c1b8",
+        "group": "c2d04edd.572dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Power Factor",
+        "label": "",
+        "format": "<font size=\"+12\">PF: {{msg.payload}}",
+        "layout": "row-center",
+        "x": 900,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1e115851.4c6838",
+        "type": "mqtt in",
+        "z": "fc6594aa.09c1b8",
+        "name": "PM Telemetry",
+        "topic": "home/power/PZEM1/data2",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "8437f5a6.4efeb8",
+        "inputs": 0,
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "95e63ebd.b692c"
+            ]
+        ]
+    },
+    {
+        "id": "95e63ebd.b692c",
+        "type": "json",
+        "z": "fc6594aa.09c1b8",
+        "name": "To JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "a477a85f.5c9f28",
+                "300dcc04.087634",
+                "715585ca.ee01bc",
+                "5251ae26.c13d",
+                "b4dec4cb.177508",
+                "494deec3.37b83",
+                "ce928620476d8c24"
+            ]
+        ]
+    },
+    {
+        "id": "a477a85f.5c9f28",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage (V)",
+        "func": "msg.payload = Number(msg.payload[0].V);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 700,
+        "wires": [
+            [
+                "d885bdf7.2a895",
+                "d91582a7.aa92d"
+            ]
+        ]
+    },
+    {
+        "id": "300dcc04.087634",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current (I)",
+        "func": "msg.payload = Number(msg.payload[0].I);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 760,
+        "wires": [
+            [
+                "f468f7eb.fd2788",
+                "78cb92ab.f5172c",
+                "6ec792a1.f8c80c"
+            ]
+        ]
+    },
+    {
+        "id": "715585ca.ee01bc",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power (W)",
+        "func": "msg.payload = Number(msg.payload[0].P);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 820,
+        "wires": [
+            [
+                "56a7abb4.b269c4",
+                "ffc06da3.58c6c"
+            ]
+        ]
+    },
+    {
+        "id": "5251ae26.c13d",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy (E)",
+        "func": "msg.payload = Number(msg.payload[0].E);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 880,
+        "wires": [
+            [
+                "c1a432d1.c59c6",
+                "d35fb9da.a49398",
+                "2e73c21.369583e",
+                "11295d01.8a1053"
+            ]
+        ]
+    },
+    {
+        "id": "d885bdf7.2a895",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage",
+        "group": "a2da0c49.c082a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltage 2",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "220",
+        "seg2": "240",
+        "x": 890,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "d91582a7.aa92d",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage/Time",
+        "group": "1244db85.eebda4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage/Time 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 900,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f468f7eb.fd2788",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Amper",
+        "group": "e86ebad.9775748",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Amper 2",
+        "label": "Amps",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "25",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "8",
+        "seg2": "16",
+        "x": 880,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "78cb92ab.f5172c",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Amper/Time",
+        "group": "e0a1a2e.b6fa66",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Amper/Time 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 900,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56a7abb4.b269c4",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power",
+        "group": "c2d04edd.572dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power 2",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "3900",
+        "seg2": "3950",
+        "x": 880,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "ffc06da3.58c6c",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power Consumption",
+        "group": "eb61136.446a0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Power Consumption 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 930,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1a432d1.c59c6",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy",
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Energy 2",
+        "label": "Wh",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "9999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "49000",
+        "seg2": "49500",
+        "x": 890,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "d35fb9da.a49398",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy/Time",
+        "group": "db4f5be0.69b6b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Energy/Time 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 900,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e73c21.369583e",
+        "type": "ui_text",
+        "z": "fc6594aa.09c1b8",
+        "d": true,
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Energy",
+        "label": "",
+        "format": "<font size=\"+12\">{{msg.payload}} Wh",
+        "layout": "col-center",
+        "x": 890,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "b4dec4cb.177508",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power Factor",
+        "func": "var power   = 0.0;\nvar current = 0.0;\nvar voltage = 0.0;\n\ncurrent = Number(msg.payload[0].I);\nvoltage = Number(msg.payload[0].V);\npower   = Number(msg.payload[0].P);\n\nif ( power > 0.0 ) \n    msg.payload =  Math.floor(power/(voltage * current)*100)/100;\nelse \n    msg.payload = 1.0;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 940,
+        "wires": [
+            [
+                "b23bda08.52b7c8"
+            ]
+        ]
+    },
+    {
+        "id": "b23bda08.52b7c8",
+        "type": "ui_text",
+        "z": "fc6594aa.09c1b8",
+        "group": "c2d04edd.572dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Power Factor",
+        "label": "",
+        "format": "<font size=\"+12\">PF: {{msg.payload}}",
+        "layout": "row-center",
+        "x": 910,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "e3262123.6263f",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "func": "var current = 0.0;\nvar voltage = 0.0;\n\ncurrent = Number(msg.payload[0].I);\nvoltage = Number(msg.payload[0].V);\n\n\n\nmsg.payload =  Math.floor(voltage * current);\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 480,
+        "wires": [
+            [
+                "1e4f43f2.5c652c",
+                "1af7446e.1f331c",
+                "cfed02d.a7ba8"
+            ]
+        ]
+    },
+    {
+        "id": "1e4f43f2.5c652c",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "group": "89d22968.73d938",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Watt 1",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "2500",
+        "seg2": "3000",
+        "x": 1130,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1af7446e.1f331c",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt Consumption",
+        "group": "5d9cc346.21a91c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Watt Consumption 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1170,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "494deec3.37b83",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "func": "var current = 0.0;\nvar voltage = 0.0;\n\ncurrent = Number(msg.payload[0].I);\nvoltage = Number(msg.payload[0].V);\n\n\n\nmsg.payload =  Math.floor(voltage * current);\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1120,
+        "wires": [
+            [
+                "e4130e31.984fd",
+                "f89ebcab.8776d",
+                "bf2ad15f.8603b"
+            ]
+        ]
+    },
+    {
+        "id": "e4130e31.984fd",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "group": "89d22968.73d938",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Watt 2",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "2500",
+        "seg2": "3000",
+        "x": 1130,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "f89ebcab.8776d",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt Consumption",
+        "group": "5d9cc346.21a91c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Watt Consumption 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1170,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d8fca30.968e34",
+        "type": "mqtt in",
+        "z": "fc6594aa.09c1b8",
+        "name": "PM Telemetry",
+        "topic": "home/power/PZEM1/data3",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "8437f5a6.4efeb8",
+        "inputs": 0,
+        "x": 135,
+        "y": 1327,
+        "wires": [
+            [
+                "510d750e.b365ac"
+            ]
+        ]
+    },
+    {
+        "id": "510d750e.b365ac",
+        "type": "json",
+        "z": "fc6594aa.09c1b8",
+        "name": "To JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 345,
+        "y": 1327,
+        "wires": [
+            [
+                "32bafc7d.3dcf14",
+                "1b36b2f1.e6dded",
+                "3c5a502c.6fba7",
+                "f52fa3a4.9175e",
+                "87199ac3.91b748",
+                "1ab7fbd5.d0d474",
+                "ce928620476d8c24"
+            ]
+        ]
+    },
+    {
+        "id": "32bafc7d.3dcf14",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage (V)",
+        "func": "msg.payload = Number(msg.payload[0].V);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 565,
+        "y": 1327,
+        "wires": [
+            [
+                "328f79f8.c34e76",
+                "7299096b.00c8b8"
+            ]
+        ]
+    },
+    {
+        "id": "1b36b2f1.e6dded",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current (I)",
+        "func": "msg.payload = Number(msg.payload[0].I);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 565,
+        "y": 1387,
+        "wires": [
+            [
+                "dff24d3f.e8491",
+                "44bb43d4.5be6bc",
+                "fb423ad8.ef8ed8"
+            ]
+        ]
+    },
+    {
+        "id": "3c5a502c.6fba7",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power (W)",
+        "func": "msg.payload = Number(msg.payload[0].P);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 565,
+        "y": 1447,
+        "wires": [
+            [
+                "6eab71ec.55b9f",
+                "1d5a058.89394fb"
+            ]
+        ]
+    },
+    {
+        "id": "f52fa3a4.9175e",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy (E)",
+        "func": "msg.payload = Number(msg.payload[0].E);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 565,
+        "y": 1507,
+        "wires": [
+            [
+                "e5b82715.a7c9f8",
+                "b4f164a1.843268",
+                "541cfbb0.b99454",
+                "9bc18d4c.d33b2"
+            ]
+        ]
+    },
+    {
+        "id": "328f79f8.c34e76",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage",
+        "group": "a2da0c49.c082a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltage 3",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "220",
+        "seg2": "240",
+        "x": 875,
+        "y": 1327,
+        "wires": []
+    },
+    {
+        "id": "7299096b.00c8b8",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Voltage/Time",
+        "group": "1244db85.eebda4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage/Time 3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 885,
+        "y": 1387,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dff24d3f.e8491",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Amper",
+        "group": "e86ebad.9775748",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Amper 3",
+        "label": "Amps",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "25",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "8",
+        "seg2": "16",
+        "x": 865,
+        "y": 1447,
+        "wires": []
+    },
+    {
+        "id": "44bb43d4.5be6bc",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Amper/Time",
+        "group": "e0a1a2e.b6fa66",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Amper/Time 3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 885,
+        "y": 1507,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6eab71ec.55b9f",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power",
+        "group": "c2d04edd.572dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power 3",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "3900",
+        "seg2": "3950",
+        "x": 865,
+        "y": 1567,
+        "wires": []
+    },
+    {
+        "id": "1d5a058.89394fb",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power Consumption",
+        "group": "eb61136.446a0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Power Consumption 3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 915,
+        "y": 1627,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5b82715.a7c9f8",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy",
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Energy 3",
+        "label": "Wh",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "9999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "49000",
+        "seg2": "49500",
+        "x": 875,
+        "y": 1687,
+        "wires": []
+    },
+    {
+        "id": "b4f164a1.843268",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy/Time",
+        "group": "db4f5be0.69b6b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Energy/Time 3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 885,
+        "y": 1747,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "541cfbb0.b99454",
+        "type": "ui_text",
+        "z": "fc6594aa.09c1b8",
+        "d": true,
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Energy",
+        "label": "",
+        "format": "<font size=\"+12\">{{msg.payload}} Wh",
+        "layout": "row-center",
+        "x": 875,
+        "y": 1807,
+        "wires": []
+    },
+    {
+        "id": "87199ac3.91b748",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Power Factor",
+        "func": "var power   = 0.0;\nvar current = 0.0;\nvar voltage = 0.0;\n\ncurrent = Number(msg.payload[0].I);\nvoltage = Number(msg.payload[0].V);\npower   = Number(msg.payload[0].P);\n\nif ( power > 0.0 ) \n    msg.payload =  Math.floor(power/(voltage * current)*100)/100;\nelse \n    msg.payload = 1.0;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 575,
+        "y": 1567,
+        "wires": [
+            [
+                "72cd3f44.1da1e"
+            ]
+        ]
+    },
+    {
+        "id": "72cd3f44.1da1e",
+        "type": "ui_text",
+        "z": "fc6594aa.09c1b8",
+        "group": "c2d04edd.572dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Power Factor",
+        "label": "",
+        "format": "<font size=\"+12\">PF: {{msg.payload}}",
+        "layout": "row-center",
+        "x": 895,
+        "y": 1867,
+        "wires": []
+    },
+    {
+        "id": "1ab7fbd5.d0d474",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "func": "var current = 0.0;\nvar voltage = 0.0;\n\ncurrent = Number(msg.payload[0].I);\nvoltage = Number(msg.payload[0].V);\n\n\n\nmsg.payload =  Math.floor(voltage * current);\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 555,
+        "y": 1747,
+        "wires": [
+            [
+                "7795c9de.e273a8",
+                "3a745eaf.723ff2",
+                "4580514f.91394"
+            ]
+        ]
+    },
+    {
+        "id": "7795c9de.e273a8",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "group": "89d22968.73d938",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Watt 2",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "2500",
+        "seg2": "3000",
+        "x": 1115,
+        "y": 1787,
+        "wires": []
+    },
+    {
+        "id": "3a745eaf.723ff2",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt Consumption",
+        "group": "5d9cc346.21a91c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Watt Consumption 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1155,
+        "y": 1847,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad0b21b8.2a88f",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 1 Amper",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase1amper",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ec792a1.f8c80c",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 2 Amper",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase2amper",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb423ad8.ef8ed8",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 3 Amper",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase3amper",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 1440,
+        "wires": [
+            [
+                "e74cbaba.d7e9e8"
+            ]
+        ]
+    },
+    {
+        "id": "e74cbaba.d7e9e8",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current 3P (I)",
+        "func": "var current1 = 0.0;\nvar current2 = 0.0;\nvar current3 = 0.0;\n\n\ncurrent1 = flow.get(\"phase1amper\");\ncurrent2 = flow.get(\"phase2amper\");\ncurrent3 = flow.get(\"phase3amper\");\n\n\n\nmsg.payload =  Number(current1 + current2 + current3).toFixed(2);\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 1540,
+        "wires": [
+            [
+                "debbfe45.8d82b",
+                "b8196f04.2454f",
+                "ac31d8918a72e5c7"
+            ]
+        ]
+    },
+    {
+        "id": "debbfe45.8d82b",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current 3P (I)",
+        "group": "e86ebad.9775748",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current 3P (I)",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "75",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "x": 1480,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "b8196f04.2454f",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current 3P (I) Consuption",
+        "group": "e0a1a2e.b6fa66",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Current 3P (I) Consuption",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1510,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9bc18d4c.d33b2",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 3 Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase3energy",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 1680,
+        "wires": [
+            [
+                "b6756f42.79911"
+            ]
+        ]
+    },
+    {
+        "id": "b6756f42.79911",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy 3P (kw)",
+        "func": "var energy1 = 0.0;\nvar energy2 = 0.0;\nvar energy3 = 0.0;\n\n\nenergy1 = flow.get(\"phase1energy\");\nenergy2 = flow.get(\"phase2energy\");\nenergy3 = flow.get(\"phase3energy\");\n\n\n\nmsg.payload =  Number(energy1 + energy2 + energy3).toFixed(2);\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1780,
+        "wires": [
+            [
+                "1eb9da66.fba356",
+                "fc52a6a9.403d28",
+                "140aeca4d142fab0"
+            ]
+        ]
+    },
+    {
+        "id": "1eb9da66.fba356",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy 3P (KW)",
+        "group": "4b0f110f.6895b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Energy 3P (KW)",
+        "label": "KW",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "9999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1560,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "fc52a6a9.403d28",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current 3P (KW) Consuption",
+        "group": "db4f5be0.69b6b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Energy 3P (KW) Consuption",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1600,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4580514f.91394",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 3 Watt",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase3watt",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 1940,
+        "wires": [
+            [
+                "4af0bde6.f93d34"
+            ]
+        ]
+    },
+    {
+        "id": "4af0bde6.f93d34",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt 3P (W)",
+        "func": "var watt1 = 0.0;\nvar watt2 = 0.0;\nvar watt3 = 0.0;\n\n\nwatt1 = flow.get(\"phase1watt\");\nwatt2 = flow.get(\"phase2watt\");\nwatt3 = flow.get(\"phase3watt\");\n\n\n\nmsg.payload =  Number(watt1 + watt2 + watt3).toFixed(2);\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 2040,
+        "wires": [
+            [
+                "222b61b.a29779e",
+                "bc8b97e8.f6e558",
+                "4689e36af3a631f5"
+            ]
+        ]
+    },
+    {
+        "id": "222b61b.a29779e",
+        "type": "ui_gauge",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt 3P (W)",
+        "group": "89d22968.73d938",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Watt 3P (I)",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "12000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "6000",
+        "seg2": "9000",
+        "x": 1550,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "bc8b97e8.f6e558",
+        "type": "ui_chart",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt 3P (W) Consuption",
+        "group": "5d9cc346.21a91c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Watt 3P (W) Consuption",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1590,
+        "y": 2140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11295d01.8a1053",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 2 Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase2energy",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e11540b.4b887c",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 1 Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase1energy",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf2ad15f.8603b",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 2 Watt",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase2watt",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cfed02d.a7ba8",
+        "type": "change",
+        "z": "fc6594aa.09c1b8",
+        "name": "Phase 1 Watt",
+        "rules": [
+            {
+                "t": "set",
+                "p": "phase1watt",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce928620476d8c24",
+        "type": "influxdb out",
+        "z": "fc6594aa.09c1b8",
+        "influxdb": "4268d1c3c7dba5dc",
+        "name": "",
+        "measurement": "energymonitor",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 820,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "67bb30a4ff88b4ea",
+        "type": "inject",
+        "z": "fc6594aa.09c1b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"V\":231.7,\"I\":1.73,\"P\":252.9,\"E\":19.73,\"F\":50,\"PF\":0.63},{\"phase\":\"L1\"}]",
+        "payloadType": "json",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "ce928620476d8c24"
+            ]
+        ]
+    },
+    {
+        "id": "ea0e4c2432c73d6e",
+        "type": "influxdb out",
+        "z": "fc6594aa.09c1b8",
+        "influxdb": "4268d1c3c7dba5dc",
+        "name": "",
+        "measurement": "energy3pmonitor",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 2110,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "715ae02.ffcb82",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Wait for all tasks to finish",
+        "func": "context.data = context.data || new Object();\n\nswitch (msg.topic) {\n    case \"task1\":\n        context.data.task1 = msg.payload;\n        msg = null;\n        break;\n    case \"task2\":\n        context.data.task2 = msg.payload;\n        msg = null;\n        break;\n    case \"task3\":\n        context.data.task3 = msg.payload;\n        msg = null;\n        break;\n        \n    default:\n        msg = null;\n    \tbreak;\n\n}\n\nif(context.data.task1 != null && context.data.task2 != null && context.data.task3 != null) {\n\tmsg2 = new Object();\n    msg2 = context.data;\n    context.data=null;\n\treturn msg2;\n} else return msg;",
+        "outputs": 1,
+        "x": 870,
+        "y": 2220,
+        "wires": [
+            [
+                "1db3a013.cd5468"
+            ]
+        ]
+    },
+    {
+        "id": "33b2850d.f24e6a",
+        "type": "delay",
+        "z": "fc6594aa.09c1b8",
+        "name": "Random delay",
+        "pauseType": "random",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 612,
+        "y": 2129,
+        "wires": [
+            [
+                "715ae02.ffcb82"
+            ]
+        ]
+    },
+    {
+        "id": "1db3a013.cd5468",
+        "type": "debug",
+        "z": "fc6594aa.09c1b8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 1077,
+        "y": 2219,
+        "wires": []
+    },
+    {
+        "id": "35eb6e77.0f77da",
+        "type": "delay",
+        "z": "fc6594aa.09c1b8",
+        "name": "Random delay",
+        "pauseType": "random",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 616,
+        "y": 2225,
+        "wires": [
+            [
+                "715ae02.ffcb82"
+            ]
+        ]
+    },
+    {
+        "id": "c8ab7682.98ada",
+        "type": "delay",
+        "z": "fc6594aa.09c1b8",
+        "name": "Random delay",
+        "pauseType": "random",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 613,
+        "y": 2309,
+        "wires": [
+            [
+                "715ae02.ffcb82"
+            ]
+        ]
+    },
+    {
+        "id": "1ccffde6.02aa52",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Task1",
+        "func": "msg.topic=\"task1\";\nmsg.payload=\"Task1's payload\"\nreturn msg;",
+        "outputs": 1,
+        "x": 444,
+        "y": 2129,
+        "wires": [
+            [
+                "33b2850d.f24e6a"
+            ]
+        ]
+    },
+    {
+        "id": "fe4cbb39.4f93c8",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Task2",
+        "func": "msg.topic=\"task2\";\nmsg.payload=\"Task2's payload\"\nreturn msg;",
+        "outputs": 1,
+        "x": 447,
+        "y": 2224,
+        "wires": [
+            [
+                "35eb6e77.0f77da"
+            ]
+        ]
+    },
+    {
+        "id": "c3766a5d.afab88",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Task3",
+        "func": "msg.topic=\"task3\";\nmsg.payload=\"Task3's payload\"\nreturn msg;",
+        "outputs": 1,
+        "x": 442,
+        "y": 2308,
+        "wires": [
+            [
+                "c8ab7682.98ada"
+            ]
+        ]
+    },
+    {
+        "id": "2dc185ba.57852a",
+        "type": "inject",
+        "z": "fc6594aa.09c1b8",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 278,
+        "y": 2213,
+        "wires": [
+            [
+                "1ccffde6.02aa52",
+                "fe4cbb39.4f93c8",
+                "c3766a5d.afab88"
+            ]
+        ]
+    },
+    {
+        "id": "2c5fe5baa103e249",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Wait for all tasks to finish",
+        "func": "context.data = context.data || {};\nswitch (msg.topic) {\n    case \"current\":\n        context.data.current = msg.payload;\n        //msg = null;\n        break;\n    case \"energy\":\n        context.data.energy = msg.payload;\n        //msg = null;\n        break;\n    case \"watt\":\n        context.data.watt = msg.payload;\n        //msg = null;\n        break;\n        \n    default:\n        //msg = null;\n    \tbreak;\n\n}\n\nif(context.data.current != null && context.data.energy != null && context.data.watt != null) {\n    msg.payload = { \"current\" : Number(context.data.current), \"energy\": Number(context.data.energy), \"watt\": Number(context.data.watt) };\n    context.data=null;\n\treturn msg;\n} else { \n    msg.payload = \"test\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2110,
+        "y": 1840,
+        "wires": [
+            [
+                "90c503f51d720e07"
+            ]
+        ]
+    },
+    {
+        "id": "ac31d8918a72e5c7",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Current",
+        "func": "msg.topic=\"current\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 1740,
+        "wires": [
+            [
+                "2c5fe5baa103e249"
+            ]
+        ]
+    },
+    {
+        "id": "140aeca4d142fab0",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Energy",
+        "func": "msg.topic=\"energy\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1837,
+        "y": 1844,
+        "wires": [
+            [
+                "2c5fe5baa103e249"
+            ]
+        ]
+    },
+    {
+        "id": "4689e36af3a631f5",
+        "type": "function",
+        "z": "fc6594aa.09c1b8",
+        "name": "Watt",
+        "func": "msg.topic=\"watt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1822,
+        "y": 1928,
+        "wires": [
+            [
+                "2c5fe5baa103e249"
+            ]
+        ]
+    },
+    {
+        "id": "90c503f51d720e07",
+        "type": "switch",
+        "z": "fc6594aa.09c1b8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "test",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2330,
+        "y": 1840,
+        "wires": [
+            [
+                "ea0e4c2432c73d6e"
+            ]
+        ]
+    }
+]
