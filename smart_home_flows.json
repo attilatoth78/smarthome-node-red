@@ -1000,6 +1000,57 @@
         ]
     },
     {
+        "id": "24c06d13b5460b49",
+        "type": "csv",
+        "z": "648ea88964e670bb",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 340,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccbc7056184d517e",
+        "type": "html",
+        "z": "648ea88964e670bb",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "",
+        "ret": "html",
+        "as": "single",
+        "x": 400,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c48e3c05932d9097",
+        "type": "xml",
+        "z": "648ea88964e670bb",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 480,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "edf4d50b6365aea4",
         "type": "mqtt in",
         "z": "c80e522343f26fe5",
